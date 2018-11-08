@@ -69,7 +69,7 @@ DBsettings.py ： 数据库配置文件
 
 views.py:  后端处理
 
-word2vec.py ： 读取文本，训练模型来实现相关搜索。目前效果还不太理想。模型已保存在/data/word2Vec/model
+word2vec.py ： 读取文本，训练模型来实现相关搜索。目前效果还不太理想。模型要保存在/data/word2Vec/model
 
 ### 6.备注
 
