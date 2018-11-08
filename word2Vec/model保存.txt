@@ -1,1 +1,0 @@
-需要通过word2Vec.py运行后所得model保存在这里
