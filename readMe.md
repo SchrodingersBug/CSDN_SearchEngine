@@ -6,9 +6,9 @@
 
 ### 2.效果展示
 
-![1541690346889](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1541690346889.png)
+![主页](https://github.com/SchrodingersBug/CSDN_SearchEngine/blob/master/data/img/index.png?raw=true)
 
-![1541690365175](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1541690365175.png)
+![结果页面](https://github.com/SchrodingersBug/CSDN_SearchEngine/blob/master/data/img/results.png?raw=true)
 
 详细效果请见展示.pdf
 
