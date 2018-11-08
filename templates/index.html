@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSDN搜索</title>
+
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="container">
+    <div id="bd">
+        <div id="main">
+            <h1 class="title">
+                <div class="logo large"></div>
+            </h1>
+            <div class="nav ue-clear">
+
+            </div>
+
+            <div class="inputArea">
+            <form method="post" action="/results/" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="text" name="query" class="searchInput"/>
+{#                <input type="button" class="searchButton" onclick="javascript:window.location='/results/'"/>#}
+                <button class="searchButton" type="submit"></button>
+            </form>
+            </div>
+
+            <div class="historyArea">
+                <p class="history">
+                    <label>热门搜索：</label>
+                    {% for query in pop_query %}
+                        <a href="/results?q={{ query }}"> {{ query }}</a>
+                    {% endfor %}
+                </p>
+
+            </div>
+        </div><!-- End of main -->
+    </div><!--End of bd-->
+
+    <div class="foot">
+        <div class="wrap">
+            <div class="copyright">Copyright &copy;ls,qb,yx 版权所有</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
